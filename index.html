@@ -38,7 +38,7 @@
                 </div>
     
                 <div class="content__pretitlewrap">
-                    <p class="content__pretitle">Генерация случайного числа между 1 и 100</p>
+                    <p class="content__pretitle">Генерация случайного числа между {{min}} и {{max}}</p>
                 </div>
     
             </div>
@@ -46,10 +46,10 @@
             <div class="content__panel">
     
                 <div class="content__rangewrap">
-                    <input class="content__range" min="1" max="100" step="1" value="100" type="range">
+                    <input class="content__range" min="1" max="100" step="1" v-model="max" type="range">
                 </div>
     
-                <div class="content__btn">
+                <div class="content__btn" @click="clickHandler">
                     <img src="./assets/img/btn-icon.svg" alt="" class="content__btn-icon">
                     <p class="content__btn-text">Выбрать случайное число</p>
                 </div>
