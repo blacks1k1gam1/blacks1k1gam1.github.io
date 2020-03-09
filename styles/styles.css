@@ -131,7 +131,7 @@ body{
 
     border-radius: 25px;
 
-    padding:45px 35px;
+    padding:35px 35px;
 
     z-index: 1;
 
@@ -202,6 +202,14 @@ body{
     background-color: #635ef8;
 
     cursor: pointer;
+
+    transition: all .4s ease-in-out;
+
+    user-select: none;
+}
+
+.content__btn:hover,.content__btn:focus{
+    transform: scale(1.05);
 }
 
 .content__btn-icon{
