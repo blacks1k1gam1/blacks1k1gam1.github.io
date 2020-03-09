@@ -79,6 +79,29 @@ body{
     margin-top: -2px;
 }
 
+.content__back{
+    position: absolute;
+    right: -296px;
+    top:0;
+    bottom: 0;
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+    opacity: .5;
+
+    height: 512px;
+    width: auto;
+    object-fit: cover;
+
+    transform: rotate(-90deg);
+}
+
+.content__back--left{
+    right: unset;
+    left:-296px
+}
+
 .content__center{
     background-color: #635ef8;
 
