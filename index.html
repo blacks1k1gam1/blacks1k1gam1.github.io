@@ -10,64 +10,70 @@
 </head>
 <body>
 
-    <header class="header">
+    <div id="app">
 
-        <div class="header__logowrap">
-            <img src="./assets/img/logo.svg" alt="" class="headero__logo">
-            <h1>Генерация случайных чисел</h1>
+        <header class="header">
+    
+            <div class="header__logowrap">
+                <img src="./assets/img/logo.svg" alt="" class="headero__logo">
+                <h1>Генерация случайных чисел</h1>
+            </div>
+    
+        </header>
+    
+    
+        <section class="content">
+    
+            <img src="./assets/img/back.png" alt="" class="content__back">
+            <img src="./assets/img/back-2.png" alt="" class="content__back content__back--left">
+    
+            <div class="content__center">
+    
+                <div class="content__titlewrap">
+                    <p class="content__title">Результат</p>
+                </div>
+    
+                <div class="content__numberwrap">
+                    <p class="content__number">{{number}}</p>
+                </div>
+    
+                <div class="content__pretitlewrap">
+                    <p class="content__pretitle">Генерация случайного числа между 1 и 100</p>
+                </div>
+    
+            </div>
+    
+            <div class="content__panel">
+    
+                <div class="content__rangewrap">
+                    <input class="content__range" min="1" max="100" step="1" value="100" type="range">
+                </div>
+    
+                <div class="content__btn">
+                    <img src="./assets/img/btn-icon.svg" alt="" class="content__btn-icon">
+                    <p class="content__btn-text">Выбрать случайное число</p>
+                </div>
+            </div>
+    
+        </section>
+    
+    
         </div>
-
-    </header>
-
-
-    <section class="content">
-
-        <img src="./assets/img/back.png" alt="" class="content__back">
-        <img src="./assets/img/back-2.png" alt="" class="content__back content__back--left">
-
-        <div class="content__center">
-
-            <div class="content__titlewrap">
-                <p class="content__title">Результат</p>
+    
+        <footer class="footer">
+    
+            <div class="footer__textwrap">
+                <!-- <a href="#" class="footer__text">Ссылка на проект</a> -->
+                <!-- <a href="#" class="footer__text">Правила использования</a> -->
             </div>
-
-            <div class="content__numberwrap">
-                <p class="content__number">0</p>
-            </div>
-
-            <div class="content__pretitlewrap">
-                <p class="content__pretitle">Генерация случайного числа между 1 и 100</p>
-            </div>
-
-        </div>
-
-        <div class="content__panel">
-
-            <div class="content__rangewrap">
-                <input class="content__range" min="1" max="100" step="1" value="100" type="range">
-            </div>
-
-            <div class="content__btn">
-                <img src="./assets/img/btn-icon.svg" alt="" class="content__btn-icon">
-                <p class="content__btn-text">Выбрать случайное число</p>
-            </div>
-        </div>
-
-    </section>
-
+    
+        </footer>
 
     </div>
 
-    <footer class="footer">
-
-        <div class="footer__textwrap">
-            <!-- <a href="#" class="footer__text">Ссылка на проект</a> -->
-            <!-- <a href="#" class="footer__text">Правила использования</a> -->
-        </div>
-
-    </footer>
     
     
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
     <script src="./app.js"></script>
 </body>
 </html>
