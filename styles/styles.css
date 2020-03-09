@@ -81,25 +81,24 @@ body{
 
 .content__back{
     position: absolute;
-    right: -296px;
-    top:0;
-    bottom: 0;
+    right: -336px;
+    top:-50px;
 
     margin-top: auto;
     margin-bottom: auto;
 
     opacity: .5;
 
-    height: 512px;
+    height: 652px;
     width: auto;
     object-fit: cover;
-
-    transform: rotate(-90deg);
 }
 
 .content__back--left{
     right: unset;
-    left:-296px
+    left: -146px;
+    height: 542px;
+    top: 80px;
 }
 
 .content__center{
@@ -162,6 +161,8 @@ body{
     flex-direction:row;
     justify-content:space-between;
     align-items:center;
+
+    box-shadow: 2px 2px 32px #888;
 }
 
 .content__rangewrap{
@@ -236,7 +237,7 @@ body{
 }
 
 .content__btn-icon{
-    height: 45px;
+    height: 25px;
     width: auto;
     object-fit: cover;
 
