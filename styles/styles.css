@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+.header{
+    position: relative;
+
+    background-color: #635ef8;
+
+}
+
+.content{
+
+}
+
+.footer{
+    background-color: #fff;
+
+    position: relative;
+
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:flex-start;
+}
